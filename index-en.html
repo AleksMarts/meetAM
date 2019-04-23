@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<title>1MeetAM IT laboratory template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./am1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+/* Full height image header */
+.bgimg-1 {
+  
+  background-position: center;
+  background-size: cover;
+  background-image: url("./MeetAM-imgs/mac.jpg");
+  min-height: 100%;
+}
+.bgimg-1  {
+    animation: bgimg-1-opacity-change 3s ease-in-out 0s 1 forwards;
+    opacity: 0;
+  }
+ @keyframes bgimg-1-opacity-change {
+    from { opacity: 0;  }
+    to { opacity: 1;  }
+  }
+  
+
+.am1-bar .am1-button {
+  padding:8px 16px  2px 16px;
+}
+.am1-animate-bottom {
+  
+  animaition-delay: 3s; animation-duration: 5s;  
+}
+.am1-animate-right {
+  animaition-delay: 5s; animation-duration: 7s;
+}
+.am1-animate-top {
+  
+ animaition-delay: 1s; animation-duration: 2s; 
+}
+
+/* ---------------------------------------------- /*
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+.mouse-icon {
+  border: 2px solid white;
+  border-radius: 16px;
+  height: 32px;
+  width: 20px;
+  display: block;
+  z-index: 10;
+  opacity: 0.7;
+  
+}
+.mouse-icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.mouse-icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  width: 4px;
+  height: 7px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*-- Vertical tab */
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 475px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  background-color: #ccc;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 475px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*end Tab*/
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="am1-top " id="navbar1" >
+  <div class="am1-bar am1-white am1-card am1-animate-bottom ">
+    <a href="#home" class="am1-bar-item am1-button " ><span style=" color:green; font-size:16px;"><b>MeetAM</b>&nbsp;</span><img src="./MeetAM-imgs/meetAM-IT-lab-logo-22.png" alt="MeetAM IT laboratory logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="am1-right am1-hide-small">
+      <a href="#about" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;ABOUT&nbsp;</b></span></a>
+	  <a href="#why" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;WHY WE&nbsp;</b></span></a>
+      <a href="#tools" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;PARTNERS&nbsp;</b></span></a>      
+      <a href="#team" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;TEAM&nbsp;</b></span></a>
+      <a href="#tools" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;CONTACT&nbsp;</b></span></a>
+	  <a href="./index.html" class="am1-bar-item am1-button"><span style="color:white; background:green;"><b>&nbsp;ru&nbsp;<b></span></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="am1-bar-item am1-button am1-right am1-hide-large am1-hide-medium" onclick="am1_open()">
+      <img src="./MeetAM-imgs/menu-icon.png">
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="am1-sidebar am1-bar-block am1-black am1-card am1-animate-left am1-hide-medium am1-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="am1_close()" class="am1-bar-item am1-button am1-large am1-padding-16">Close ×</a>
+  <a href="#about" onclick="am1_close()" class="am1-bar-item am1-button">ABOUT</a>
+  <a href="#tools" onclick="am1_close()" class="am1-bar-item am1-button">WHY WE</a>
+  <a href="#why" onclick="am1_close()" class="am1-bar-item am1-button">PARTNERS</a>
+  <a href="#team" onclick="am1_close()" class="am1-bar-item am1-button">TEAM</a>
+  <a href="#contact" onclick="am1_close()" class="am1-bar-item am1-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+
+<header class="bgimg-1 am1-display-container am1-grayscale-min" id="home">
+  <div class=" am1-display-left am1-text-white " style="padding:18px">
+    <span class="am1-animate-top am1-xxlarge am1-hide-small am1-wide ">MeetAM&nbsp IT laboratory</span><br>
+    <span class="am1-animate-top am1-xlarge am1-hide-large am1-hide-medium am1-wide">MeetAM&nbsp IT laboratory</span><br>
+    <span class="am1-animate-right am1-xlarge ">Our code&nbsp; give you profit</span>
+	
+    <div style="padding:12px 52px"><a href="#about"><div  class="mouse-icon"><div class="wheel"></div></div></a></div>	
+  </div>
+  
+ 
+</header>
+
+<!-- Promo Section - "We know design" -->
+<div style="padding:1px" class="am1-container am1-light-grey"  id="about">
+ <br><h3  align="center" style=" color:white; background:green;">ABUT US</h3><br> 
+
+<div  class=" am1-container ">
+	<p align="center"  style="color:green;  font-size:18px;">
+	Jack Welch (General Electric) called budgeting the "curse of corporate America".&nbsp; We would add - not just for America.<br> The implementation of our code should eliminate the client’s routine processes that do not add value in the business.<br>Our mission is to free the personal resources of business peoples for creativity and development.
+		
+	</p>
+	</div>	
+    <div class=" am1-half ">
+      <p align="justify"  style="color:brown; padding:0px 18px;"><img  align="left" src="./MeetAM-imgs/it-lab-mentor-64.png">Our client is small and medium business. Having many years of experience in developing IT products for a number of business sectors, we understand customer requirements. We digitize your business and give you control and development tools. We are building to the customer the most modern IT infrastructure. If necessary, we involve software products and stuff of subcontractors - leading world IT companies. We can run and serve customers from the prepare of technical specifications to the promotion of their product or service in the digital world.</p> 
+	  
+      
+	  
+    </div>
+    <div class="am1-half">
+	<div class="slideshow-container" style=" padding:18px 0px;" >
+
+<div class="mySlides">
+  <div class="numbertext" >1 / 6</div>
+  <img src="./MeetAM-imgs/IT-lab-skills-handshake.jpg" style="width:100%" alt="IT business deals">
+  <div class="text" style="background:black">Deal !</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext" >2 / 6</div>
+  <img src="./MeetAM-imgs/IT-lab-projects.jpg" style="width:100%" alt="IT  projects">
+  <div class="text" style="background:black">Project - together with client.</div>
+</div>
+<div class="mySlides">
+  <div class="numbertext">3 / 6</div>
+  <img src="./MeetAM-imgs/team-choise.jpg" style="width:100%" alt="Team for IT project">
+  <div class="text" style="background:black">Collect team of the best.</div>
+</div>
+
+
+<div class="mySlides">
+  <div class="numbertext">4 / 6</div>
+  <img src="./MeetAM-imgs/services-meetAM-IT-lab-green.jpg"  style="width:100%" alt="services meetAM IT laboratory">
+  <div class="text" style="background:black">Production.</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 6</div>
+  <img src="./MeetAM-imgs/IT-lab-devops.jpg" style="width:100%" alt="IT laboratory projects development and operation">
+  <div class="text" style="background:black">Test and DevOps.</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 6</div>
+  <img src="./MeetAM-imgs/meetAM-ITlab-go-seo.png" style="width:100%" alt="meetAM laboratory ads and promotion">
+  <div class="text" style="background:black;">Ads and promo.</div>
+</div>
+
+
+<br>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+  </div>
+  
+</div>
+
+</div>
+
+    
+        
+        
+    
+  
+
+<!-- About Section -->
+<div id="why" class="am1-container am1-light-grey" style="padding:128px 16px" id="about">
+  <h3 class="am1-center" style="color:white; background:green;"><span ><b>&nbsp&nbspWhy you should choose us ?&nbsp&nbsp   </b></span></h3>
+  
+  <div class="am1-row-padding am1-center" style="margin-top:64px">
+    <div class="am1-third">
+      <img class="am1-margin-bottom am1-jumbo" src="./MeetAM-imgs/low-cost-28.png"  alt="IT business deals">
+      <p class="am1-large">Optimal cost</p>
+      <p>If you prefer to pay by the hour - our team of 4 - 5 people often do the same thing as the big IT-companies. Products that we supply do not tie you to large vendors, their expensive maintenance and hidden fees.</p>
+    </div>
+    <div class="am1-third">
+     <img class="am1-margin-bottom am1-jumbo" src="./MeetAM-imgs/turnkey.png"  alt="IT business deals">
+      <p class="am1-large">Turnkey contracts</p>
+      <p>We understand the needs of the client in a number of industries where we ourselves worked. Therefore,"turnkey" contracts with us  are effective for the client.</p>
+    </div>
+    
+    <div class="am1-third">
+      <img class="am1-margin-bottom am1-jumbo" src="./MeetAM-imgs/meetAM-IT-lab-logo-28.png"  alt="IT business deals">
+      <p class="am1-large">Your digital freedom and uniqueness</p>
+      <p> We deliver everything with open source code and train your employees. Do you need any changes or correction of our product over time? You can do everything yourself, including - to determine your unique "face" in the Front End. Help is needed ? We are always in touch!</p>
+    </div>
+  </div>
+<br><br><br>
+
+
+
+
+<!-- Promo Section "Statistics" -->
+<div  style="padding: 1px" class="am1-container am1-row am1-center am1-green ">
+  <div class="am1-third">
+    <span class="am1-xxlarge">14+</span>
+    <br>PARTNERS
+  </div>
+  <div class="am1-third">
+    <span class="am1-xxlarge">25</span>
+    <br>PROJECTS
+  </div>
+  <div class="am1-third">
+    <span class="am1-xxlarge">17+</span>
+    <br>CLIENTS
+  </div>
+  
+  </div>
+</div>
+
+<!-- Partner div -->
+
+<div class="am1-container am1-light-grey" style="padding:48px 16px" id="tools">
+  <h4 align="center" style="color:white; background:green;">Business owners and executives who can recommend us</h4><br>
+  <br>
+  <div align="center" class="am1-content am1-section" >
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/logo_kpi-1.png" height="257px">
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/ramodanova-logo.png" height="257px">
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/zkids.png" height="257px">
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/uhl-mash-logo-200x300.jpg" height="257px">
+  <img class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/Umair-300x200.jpg" height="257px">
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/neiromed-logo.jpg" height="257px">
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/aton-logo.jpg" height="257px" >
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/belita-vitex.png" height="257px" >
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/bgs-logo-png.png" height="257px" >
+  <img  class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/adamax-logo-200x300.png" height="257px" >  
+  
+  <img class="mySlides1 am1-animate-fading" src="./MeetAM-imgs/runo-300x200.jpg" height="257px">
+ 
+  
+  
+</div>
+</div>
+<!-- Work Section -->
+<div class="am1-container am1-light-grey" style="padding:128px 16px" id="tools">
+<h3 style="color:green;" class="am1-center"><img align="center" src="./MeetAM-imgs/meetAM-IT-lab-tools-mal.png">&nbsp&nbsp&nbsp <b>Tools</b></h3><br>
+<div class="am1-row-padding" >
+ 
+  <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London');" onmouseover="openCity(event, 'London')" id="defaultOpen">Front-end</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Back-end</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">BPM&ERP systems</button>
+  <button class="tablinks" onmouseover="openCity(event, 'New_York')">eCommerce systems</button>
+  <button class="tablinks" onmouseover="openCity(event, 'San Francisco')">Ads&promo tools, platforms</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3 align="center" style="color: green; ">Your uniqueness in the digital world -</h3>
+  <p align="center">Frameworks, libraries,&nbsp&nbsp <span style="color: green;"><b>MeetAM templates</b></span></p>
+  <p> <img src="./MeetAM-imgs/frameworks.png" style="width:100%" alt="IT business deals"></p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3 align="center" style="color: green">Freedom and efficiency in managing your business data</h3>
+  <p align="center">SQL and NoSQL DB,&nbsp&nbsp <span style="color: green"><b>MeetAM templates</b></span></p>
+  <p> <img src="./MeetAM-imgs/data-1.png" style="width:100%" alt="IT business deals"></p>  
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3 align="center" style="color: green">Management of your business</h3>
+  <p align="center">BPM, ERP systems,&nbsp&nbsp <span style="color: green"><b>MeetAM experience</b></span></p>
+  <p> <img src="./MeetAM-imgs/bpm-erp-systems.png" style="width:100%" alt="IT business deals"></p>  
+</div>
+
+<div id="New_York" class="tabcontent">
+  <h3 align="center" style="color: green">Effectiveness of e-Commerce</h3>
+  <p align="center">CRM, eCommerce systems,&nbsp&nbsp <span style="color: green"><b>Experience and partners of the MeetAM</b></span></p>
+  <p> <img src="./MeetAM-imgs/eCommerce_2.png" style="width:100%" alt="IT business deals"></p>  
+</div>
+
+<div id="San Francisco" class="tabcontent">
+  <h3 align="center" style="color: green">Advertising and selling your product or service</h3>
+  <p align="center" >Trading platforms, social networks, &nbsp&nbsp <span style="color: green"><b>algorithms and experience of our team</b></span></p>
+  <p> <img src="./MeetAM-imgs/ads-promo-1.png" style="width:100%" alt="IT business deals"></p>  
+</div>
+</div>
+</div>
+
+
+<!-- Team Section -->
+<div class="am1-container am1-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="am1-center" bckground><span style="color:white; background:green;"><b>&nbsp&nbspWho runs MeetAM&nbsp&nbsp   </b></span></h3>
+  <p class="am1-center am1-large"><span style="color:white; background:green;">&nbsp&nbspKey figures of the company&nbsp&nbsp</span></p>
+  <div class="am1-row-padding am1-grayscale" style="margin-top:64px">
+    <div class="am1-col l3 m6 am1-margin-bottom">
+      <div class="am1-card">
+        <img src="./MeetAM-imgs/team2.jpg" alt="John" style="width:100%">
+        <div class="am1-container">
+          <h3>Mikle Marts</h3>
+          <p class="am1-opacity">CTO-Backend & Co-Founder</p>
+          <p>Over 30 years of experience. IT projects for agriculture, aviation.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="am1-col l3 m6 am1-margin-bottom">
+      <div class="am1-card">
+        <img src="./MeetAM-imgs/team1.jpg" alt="Jane" style="width:100%">
+        <div class="am1-container">
+          <h3>Lyudmila Vlasenko</h3>
+          <p class="am1-opacity">CEO</p>
+          <p>Over 10 years of administrative experience.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="am1-col l3 m6 am1-margin-bottom">
+      <div class="am1-card">
+        <img src="./MeetAM-imgs/team3.jpg" alt="Mike" style="width:100%">
+        <div class="am1-container">
+          <h3>Aleks Marts</h3>
+          <p class="am1-opacity" >CTO-Frontend & CO-Founder</p>
+          <p>Over 40 years of experience. IT projects for agriculture, engineering, medicine.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="am1-col l3 m6 am1-margin-bottom">
+      <div class="am1-card">
+        <img src="./MeetAM-imgs/team4.jpg" alt="Dan" style="width:100%">
+        <div class="am1-container">
+          <h3>Den Star</h3>
+          <p class="am1-opacity">Дизайнер</p>
+          <p>Real star !</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="am1-container am1-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="am1-center">CONTACT</h3>
+  <p class="am1-center am1-large">We are always in touch! &nbsp&nbsp  Write, call us:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw am1-xxlarge am1-margin-right"></i> Kiev, UA</p>
+    <p><i class="fa fa-phone fa-fw am1-xxlarge am1-margin-right"></i> Phone: +380671003122</p>
+    <p><i class="fa fa-envelope fa-fw am1-xxlarge am1-margin-right"> </i> Email: ambrandua@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="am1-input am1-border" type="text" placeholder="Имя" required name="Name"></p>
+      <p><input class="am1-input am1-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="am1-input am1-border" type="text" placeholder="Тема" required name="Subject"></p>
+      <p><input class="am1-input am1-border" type="text" placeholder="Сообщение" required name="Message"></p>
+      <p>
+        <button class="am1-button am1-black" type="submit">
+          <i class="fa fa-paper-plane"></i> Send
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="am1-center am1-black am1-padding-64">
+  <a href="#home" class="am1-button am1-light-grey"><i class="fa fa-arrow-up am1-margin-right"></i>Top</a>
+  <div class="am1-xlarge am1-section">
+    <i class="fa fa-facebook-official am1-hover-opacity"></i>
+    <i class="fa fa-instagram am1-hover-opacity"></i>
+    <i class="fa fa-snapchat am1-hover-opacity"></i>
+    <i class="fa fa-pinterest-p am1-hover-opacity"></i>
+    <i class="fa fa-twitter am1-hover-opacity"></i>
+    <i class="fa fa-linkedin am1-hover-opacity"></i>
+  </div>
+  </footer>
+  
+  <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.top = "0";
+  } else {
+    document.getElementById("navbar1").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+  
+ <script> 
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function am1_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function am1_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+ 
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every ... seconds
+}
+
+</script>
+
+
+
+<script>
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+<script>
+
+// animate fade img
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
+</script>
+
+</body>
+</html>
